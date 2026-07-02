@@ -1,0 +1,239 @@
+/**
+ * Minimal transparent Vesktop theme.
+ * Keeps Discord's UI usable while removing wallpaper, glass effects, blur,
+ * heavy shadows, and opaque panel backgrounds.
+ */
+
+:root,
+.theme-dark,
+.theme-light {
+  --app-bg: transparent;
+  --app-blur: 0px;
+  --popout-blur: 0px;
+
+  --background-primary: #030305e6;
+  --background-secondary: #020204eb;
+  --background-secondary-alt: #040407eb;
+  --background-tertiary: #010103f0;
+  --background-accent: #0a0a0ed9;
+  --background-floating: #050508f2;
+  --background-base-lowest: #00000032;
+  --background-base-lower: #1414143b;
+  --background-base-low: #04040733;
+  --background-surface-high: #0a0b166f;
+  --background-surface-higher: #0a0b166f;
+  --background-surface-highest: #0a0b166f;
+
+  --bg-base-primary: #030305b3;
+  --bg-base-secondary: #020204b3;
+  --bg-base-tertiary: #010103b3;
+  --bg-surface-overlay: #050508f2;
+  --bg-surface-raised: #0c0c10e0;
+  --bg-mod-faint: #ffffff08;
+  --bg-mod-subtle: #ffffff0d;
+  --bg-mod-strong: #ffffff17;
+ 
+  --background-modifier-hover: #ffffff0d;
+  --background-modifier-active: #ffffff14;
+  --background-modifier-selected: #ffffff1a;
+  --background-modifier-accent: #ffffff17;
+ 
+  --channeltextarea-background: #0e0e13d9;
+  --input-background: #0a0a0ee0;
+  --modal-background: #040407f2;
+  --modal-footer-background: #08080beb;
+  --deprecated-card-bg: #0a0a0ed9;
+  --deprecated-store-bg: #030305eb;
+}
+
+body,
+#app-mount,
+.appMount__51fd7,
+.app__160d8,
+.bg__960e4,
+.container_a2f514 {
+  background-color: transparent !important;
+}
+
+*,
+*::before,
+*::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  text-shadow: none !important;
+}
+ 
+[style*="backdrop-filter"],
+[style*="-webkit-backdrop-filter"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+ 
+[style*="filter: blur"],
+[style*="filter:blur"] {
+  filter: none !important;
+}
+
+[class*="channelName"], [class*="name__"] {
+  font-family: "gg sans", "Noto Color Emoji", sans-serif !important;
+}
+
+.title_c38106,
+.layers__160d8,
+.layer__960e4,
+.base_c48ade,
+.content_c48ade,
+.container__2637a,
+.container__9293f,
+.children__9293f::after,
+.chat_f75fb0,
+.chatContent_f75fb0,
+.content_f75fb0,
+.channelChatWrapper_cb9592,
+.noChannel__01d5c,
+.sidebar__5e434,
+.sidebarList__5e434,
+.privateChannels_e6b769,
+.scroller__99e7c,
+.container_f37cb1,
+.panels__5e434,
+.membersWrap_c8ffbb,
+.container_c8ffbb,
+.members_c8ffbb,
+.members_c8ffbb > div,
+.member__5d473,
+.nowPlayingColumn__133bf,
+.container__7d20c,
+.applicationStore_f07d62,
+.pageWrapper_a3a4ce,
+.standardSidebarView__23e6b,
+.sidebarRegionScroller__23e6b,
+.contentRegion__23e6b,
+.contentRegionScroller__23e6b,
+.shop__08415,
+.shopScroll__08415 {
+  background: #1a1b264f !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.subtitleContainer_f75fb0 {
+  background: #1a1b264f !important;
+}
+
+.overlay_c0bea0 {
+  background-color: #2b2b3b55;
+}
+
+.tree_ef3116,
+.wrapper_ef3116,
+.scroller_ef3116,
+.scrollerBase_d125d2 {
+  background: transparent !important;
+}
+
+.tree_ef3116 {
+  padding-top: 1px;
+}
+
+.form_f75fb0::before,
+.content_f75fb0::before,
+.children__9293f::after,
+.chatGradientBase__36d07,
+.chatTypingGradientAtBottom__36d07,
+.chatTypingGradientNotAtBottom__36d07 {
+  display: none !important;
+}
+
+.channelTextArea__74017,
+.scrollableContainer__74017,
+.wrapper__44df5,
+.searchBar__97492,
+.searchBar_e6b769 .button_a22cb0,
+.searchBox_d9c882,
+.container__33507,
+.input__0f084,
+.inputDefault__0f084,
+.input__53d4d,
+.select__3f413,
+.lookFilled__201d5,
+.lookOutlined__201d5,
+.button__201d5,
+.actionButton_f8fa06,
+.bar__7aaec {
+  background: #00000015 !important;
+  border-color: #ffffff0f !important;
+  box-shadow: none !important;
+}
+
+.channelTextArea__74017:focus-within,
+.scrollableContainer__74017:focus-within,
+.input__0f084:focus,
+.inputDefault__0f084:focus,
+.input__53d4d:focus {
+  background: transparent !important;
+}
+
+.wrapper_c19a55,
+.messageListItem__5126c,
+.message__5126c,
+.message__5126c:hover,
+.selected__91a9d .layout__91a9d,
+.modeSelected__2ea32 .link__2ea32,
+.modeSelected__2ea32:hover .link__2ea32,
+.interactiveSelected__972a0,
+.interactive__972a0:hover,
+.clickable__91a9d:hover .layout__91a9d,
+.container__0f2e8,
+.card__73069,
+.itemCard__7e549,
+.embedFull__623de {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.message__5126c:hover,
+.clickable__91a9d:hover .layout__91a9d,
+.interactive__972a0:hover,
+.modeUnreadImportant__2ea32 .link__2ea32:hover {
+  background: #ffffff0f !important;
+}
+ 
+.menu_c1e9c4,
+.submenu_c1e9c4,
+.root__49fc1,
+.modal__49fc1,
+.content__49fc1,
+.footer__49fc1,
+.container__55c99,
+.messagesPopoutWrap__45690,
+.browser_f542fc,
+.popout__76f04,
+.popout__3f413,
+.picker__09f65,
+.drawerSizingWrapper__08434,
+.container_d9c882,
+.quickswitcher_ac6cb0,
+.uploadModal_dbca3c,
+.backdrop__1a911 {
+  background: #1414143b !important;
+  box-shadow: none !important;
+}
+ 
+.tooltip__382e7,
+.reaction__23977,
+.reaction_f8896c,
+.replyBar__841c8,
+.threadSuggestionBar__841c8,
+.jumpToPresentBar__0f481 {
+  background: #28282b5b !important;
+}
+ 
+
+.mentioned__5126c {
+  background: #F705FF22 !important;
+}
+
+.mentioned__5126c::before {
+  background: #F705FF;
+}
